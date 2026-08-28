@@ -235,6 +235,25 @@ export default function Home() {
 
       <div className="max-w-5xl mx-auto">
 
+        <div className="flex justify-between items-center mb-8">
+  <button
+    onClick={() => {
+      setShowLandingPage(true);
+      setSelectedGoal(null);
+      setRoutine([]);
+      setIsRunning(false);
+      setIsComplete(false);
+    }}
+    className="text-zinc-400 hover:text-white transition"
+  >
+    ← Home
+  </button>
+
+  <h2 className="text-xl font-semibold">
+    FlexFlow
+  </h2>
+</div>
+
         {/* HEADER */}
         <div className="mb-10 text-center">
 
